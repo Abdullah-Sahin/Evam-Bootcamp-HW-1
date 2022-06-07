@@ -20,15 +20,16 @@ public class HomeworkOne {
     public static String turnOne(String[] words){
         for(String word : words){
             if(word.contains(myString))
-                return word;
+                return "Tanımlı value'yu içeren string değer: " + word;
         }
-        return null;
+        return "Tanımlı value'yu içeren string değer bulunamadı";
     }
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        boolean wantInput = true;
         List<String> wordList = new ArrayList<>();
+        // if user wants to type more input, <<wantInput>> boolean value will stay true
+        boolean wantInput = true;
         // User enters at least 5 strings by loop
         while(wantInput){
             System.out.println("Please type a string");
