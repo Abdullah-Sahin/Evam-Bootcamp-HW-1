@@ -12,10 +12,9 @@ public class HomeworkOne {
     static String myString = "code";
 
     /**
-     * Takes an array of Strings and return the first string that contains code, if no string
-     * contains, returns null
+     * Takes an array of Strings and return the first string that contains code
      * @param words array of strings
-     * @return word from words that contains statically defined myString object, null otherwise
+     * @return word from words that contains statically defined myString object
      */
     public static String turnOne(String[] words){
         for(String word : words){
@@ -27,6 +26,7 @@ public class HomeworkOne {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        // The list of inputs that user typed
         List<String> wordList = new ArrayList<>();
         // if user wants to type more input, <<wantInput>> boolean value will stay true
         boolean wantInput = true;
